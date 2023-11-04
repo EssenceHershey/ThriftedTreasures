@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    section {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1><a href="index.html">THRIFTEDTREASURES</a></h1>
+      <a href="Home.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+      <a href="items.html">Items</a>
+      <a href="Login.html">Log In</a>
+    </nav>
+  </header>
+
+  <section>
+    <form>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod" required>
+        <option value="COD">CASH ON DELIVERY</option>
+        <option value="GCASH">Gcash</option>
+        <label for="GCASH NUMBER">GCASH NUMBER:</label>
+        <input type="text" id="GCASH" name="number" required>
+
+        <!-- Add more options as needed -->
+      </select>
+
+      <label for="additionalDetails">VALID ID Number & PhoneNumber:</label>
+      <textarea id="additionalDetails" name="additionalDetails" rows="4"></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Thrifted Treasure. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
